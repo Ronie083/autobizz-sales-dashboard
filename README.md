@@ -1,16 +1,41 @@
-# React + Vite
+# AutoBizz Sales Dashboard – Junior Frontend Engineer Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was completed as part of a Junior Frontend Engineer assessment. The goal was to build a simple one-page sales dashboard using data from a backend API.
 
-Currently, two official plugins are available:
+Live Demo: [https://autobizz-sales-dashboard-peach.vercel.app/](https://autobizz-sales-dashboard-peach.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Assessment Requirements Implemented
+1. Date Range Filter: Select start and end dates to reload sales data.
+2. Additional Filters: Filter by Minimum Price, Customer Email, and Phone Number.
+3. Time-Series Chart: Line chart showing Total Sales over time.
+4. Sales Table:
+ - Displays 50 items per page.
+ - Supports sorting by Date and Price.
+ - Pagination using before/after tokens from the API.
+5. Deployment: Dashboard deployed on Vercel.
+6. Bonus Features Implemented
+ - Caching: Using React Query for faster navigation between filters/pages.
+ - Responsive Design: Works on desktop, tablet, and mobile screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+1. Frontend: React
+2. Charts: Recharts
+3. State Management / Caching: React Query
+4. Styling: Tailwind CSS
+5. Deployment: Vercel
 
-## Expanding the ESLint configuration
+## Getting Started
+To run this project locally:
+# Clone the repository
+git clone https://github.com/your-username/autobizz-sales-dashboard.git
+# Go into the project folder
+cd autobizz-sales-dashboard
+# Install dependencies
+npm install
+# Start the development server
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+ - The project fetches data from the provided API endpoints (/getAuthorize and /sales).
+ - Sorting, filtering, and pagination are all handled using the API.
