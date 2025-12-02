@@ -27,13 +27,13 @@ Live Demo: [https://autobizz-sales-dashboard-peach.vercel.app/](https://autobizz
 
 ## Getting Started
 To run this project locally:
-# Clone the repository
+### Clone the repository
 git clone https://github.com/your-username/autobizz-sales-dashboard.git
-# Go into the project folder
+### Go into the project folder
 cd autobizz-sales-dashboard
-# Install dependencies
+### Install dependencies
 npm install
-# Start the development server
+### Start the development server
 npm run dev
 
 ## Notes
