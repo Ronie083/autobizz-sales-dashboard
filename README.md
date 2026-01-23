@@ -1,41 +1,48 @@
-# AutoBizz Sales Dashboard – Junior Frontend Engineer Assessment
+# Autobizz Sales Dashboard
 
-This project was completed as part of a Junior Frontend Engineer assessment. The goal was to build a simple one-page sales dashboard using data from a backend API.
+A responsive one-page sales dashboard built as part of a **Frontend Engineer technical assessment**.  
+The application consumes backend APIs to display, filter, sort, and visualize sales data in a clean and performant UI.
 
-Live Demo: [https://autobizz-sales-dashboard-peach.vercel.app/](https://autobizz-sales-dashboard-peach.vercel.app/)
+🔗 **Live Demo:** https://autobizz-sales-dashboard-peach.vercel.app/
 
+---
 
-## Assessment Requirements Implemented
-1. Date Range Filter: Select start and end dates to reload sales data.
-2. Additional Filters: Filter by Minimum Price, Customer Email, and Phone Number.
-3. Time-Series Chart: Line chart showing Total Sales over time.
-4. Sales Table:
- - Displays 50 items per page.
- - Supports sorting by Date and Price.
- - Pagination using before/after tokens from the API.
-5. Deployment: Dashboard deployed on Vercel.
-6. Bonus Features Implemented
- - Caching: Using React Query for faster navigation between filters/pages.
- - Responsive Design: Works on desktop, tablet, and mobile screens.
+## 🚀 Features
 
-## Tech Stack
-1. Frontend: React
-2. Charts: Recharts
-3. State Management / Caching: React Query
-4. Styling: Tailwind CSS
-5. Deployment: Vercel
+### Sales Data & Filters
+- Date range filter (start & end date)
+- Filter by minimum price
+- Filter by customer email
+- Filter by customer phone number
+- Server-side sorting by **date** and **price**
+- Paginated table (50 records per page)
+- Pagination handled using API `before` / `after` tokens
 
-## Getting Started
-To run this project locally:
-### Clone the repository
+### Data Visualization
+- Time-series **line chart** showing total sales over time
+- Dynamic updates based on active filters
+
+### Performance & UX
+- Client-side caching using **React Query** for faster navigation
+- Fully responsive layout (desktop, tablet, mobile)
+- Clean, minimal UI using Tailwind CSS
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js
+- **Charts:** Recharts
+- **State Management & Caching:** React Query
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 📦 Getting Started
+
+To run the project locally:
+
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/your-username/autobizz-sales-dashboard.git
-### Go into the project folder
-cd autobizz-sales-dashboard
-### Install dependencies
-npm install
-### Start the development server
-npm run dev
-
-## Notes
- - The project fetches data from the provided API endpoints (/getAuthorize and /sales).
- - Sorting, filtering, and pagination are all handled using the API.
